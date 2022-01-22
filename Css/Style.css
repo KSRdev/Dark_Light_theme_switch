@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --hue-color: 240;
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 5rem;
+  border-radius: .5rem;
+  border-radius: 38px;
+  background: #ffffff;
+  -webkit-box-shadow: 8px 8px 16px #ababab, -8px -8px 16px #ffffff;
+          box-shadow: 8px 8px 16px #ababab, -8px -8px 16px #ffffff;
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  /* Change favorite color */
+  --body-color: hsl(var(--hue-color), 28%, 13%);
+}
+
+/*========== Button Dark/Light ==========*/
+.nav__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.change-theme {
+  font-size: 6rem;
+  color: #8d1d1d;
+  cursor: pointer;
+}
+
+.btn_dark {
+  display: inline-block;
+  padding: 0 5rem;
+  border-radius: .5rem;
+  border-radius: 38px;
+  background: hsl(var(--hue-color), 28%, 13%);
+  -webkit-box-shadow: inset 8px 8px 16px #10101c, inset -8px -8px 16px #202038;
+          box-shadow: inset 8px 8px 16px #10101c, inset -8px -8px 16px #202038;
+}
+/*# sourceMappingURL=Style.css.map */
